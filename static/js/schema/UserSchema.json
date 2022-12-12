@@ -1,0 +1,51 @@
+{
+    "created_at": {
+        "type": "datetime"
+    },
+    "updated_at": {
+        "type": "datetime"
+    },
+    "deleted": {
+        "type": "boolean",
+        "default": false
+    },
+    "deleted_at": {
+        "type": "datetime"
+    },
+    "id": {
+        "type": "number",
+        "primary": true
+    },
+    "email": {
+        "type": "string",
+        "required": true,
+        "length": 255
+    },
+    "name": {
+        "type": "string",
+        "required": true,
+        "length": 255
+    },
+    "token_expires": {
+        "type": "datetime"
+    },
+    "perishable_token": {
+        "type": "string",
+        "length": 255
+    },
+    "birthday": {
+        "type": "datetime"
+    },
+    "first_name": {
+        "type": "string",
+        "length": 35
+    },
+    "last_name": {
+        "type": "string",
+        "length": 35
+    },
+    "is_active": {
+        "type": "boolean",
+        "default": false
+    }
+}
